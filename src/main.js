@@ -30,7 +30,8 @@ Vue.component('Loader', Loader)
 Vue.directive('tooltip', tooltipDirective)
 Vue.component('Paginate', Paginate)
 
-firebase.initializeApp({
+firebase.initializeApp(
+/*    {
     apiKey: "AIzaSyA8cwLNuEewNzHbXEKZAoRH75QHq_sMstI",
     authDomain: "show-galaktika.firebaseapp.com",
     databaseURL: "https://show-galaktika.firebaseio.com",
@@ -39,6 +40,16 @@ firebase.initializeApp({
     messagingSenderId: "854350845130",
     appId: "1:854350845130:web:bb8182f902f9e09f111033",
     measurementId: "G-JEL5Y85J2K"
+}*/
+{
+    apiKey: "AIzaSyBQ89oSEspGc1i7WBCzMGebC3abJ6IHv2c",
+        authDomain: "show-galaktika-5f728.firebaseapp.com",
+        databaseURL: "https://show-galaktika-5f728.firebaseio.com",
+        projectId: "show-galaktika-5f728",
+        storageBucket: "show-galaktika-5f728.appspot.com",
+        messagingSenderId: "948660315883",
+        appId: "1:948660315883:web:f751cdfc7adcc762a140ae",
+        measurementId: "G-13L9N0L7SL"
 })
 
 let app;
