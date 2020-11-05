@@ -1,0 +1,17 @@
+{
+  "ProfileTitle" : "Profile",
+  "Message_EnterName": "Enter Name",
+  "Update": "Update",
+  "Name": "Name",
+  "Menu_Bill": "Bill",
+  "Menu_History": "History",
+  "Menu_Planning": "Planning",
+  "Menu_NewRecord": "New Record",
+  "Menu_Category": "Category",
+  "CRM_Title": "Kennel",
+  "Detail_Title": "Detail",
+  "Login": "Login",
+  "Logout": "Log Out",
+  "Register": "Register",
+  "Name_Suite": "Show Galaktika"
+}
