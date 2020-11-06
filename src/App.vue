@@ -8,6 +8,7 @@
 <script>
     import EmptyLayout from "@/layouts/EmptyLayout";
     import MainLayout from "@/layouts/MainLayout";
+    import ClearLayout from "./layouts/ClearLayout";
 
     export default {
         computed: {
@@ -17,7 +18,7 @@
             }
         },
         components: {
-            EmptyLayout, MainLayout
+            EmptyLayout, MainLayout, ClearLayout
         }
     }
 
@@ -25,4 +26,5 @@
 <style lang="scss">
     @import '~materialize-css/dist/css/materialize.min.css';
     @import 'assets/index.css';
+
 </style>

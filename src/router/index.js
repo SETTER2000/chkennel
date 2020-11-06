@@ -16,11 +16,18 @@ const routes = [
         name: 'login',
         meta: {layout: 'empty'},
         component: () => import('@/views/Login.vue')
-    }, {
+    },
+    {
         path: '/register',
         name: 'register',
         meta: {layout: 'empty'},
         component: () => import('@/views/Register.vue')
+    },
+    {
+        path: '/news',
+        name: 'news',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/News.vue')
     },
     {
         path: '/categories',

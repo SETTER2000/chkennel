@@ -1,5 +1,10 @@
 import Vue from 'vue'
 import Vuelidate from 'vuelidate'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee, faChild, faCircle, faBone,faCamera, faArchive } from '@fortawesome/free-solid-svg-icons'
+import { faComment,faCheckCircle} from '@fortawesome/free-regular-svg-icons'
+import { faTwitter,faFacebook,faVk,faInstagramSquare,faYoutube,faFacebookMessenger} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
 import Paginate from 'vuejs-paginate'
 import VueMeta from 'vue-meta'
 import App from './App.vue'
@@ -17,6 +22,25 @@ import 'materialize-css/dist/js/materialize.min'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
+library.add(
+    faCoffee,
+    faChild,
+    faCircle,
+    faArchive,
+    faComment,
+    faFacebook,
+    faTwitter,
+    faVk,
+    faBone,
+    faYoutube,
+    faCamera,
+    faInstagramSquare,
+    faFacebookMessenger,
+    faCheckCircle
+)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-layers', FontAwesomeLayers)
+Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 
 Vue.config.productionTip = false
 Vue.use(messagePlugin)

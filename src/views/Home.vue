@@ -1,11 +1,8 @@
 <template>
-
     <div class="app-page">
-
         <div>
             <div class="page-title">
                 <h3>Счет</h3>
-
                 <button class="btn waves-effect waves-light btn-small" @click="refresh">
                     <i class="material-icons">refresh</i>
                 </button>
@@ -13,17 +10,13 @@
             <Loader v-if="loading"/>
             <div v-else class="row">
                 <HomeBill :rates="currency.rates"/>
-
                 <HomeCurrency
                         :rates="currency.rates"
                         :date="currency.date"
                 />
             </div>
         </div>
-
     </div>
-
-
 </template>
 
 <script>

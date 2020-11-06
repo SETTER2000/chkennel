@@ -1,0 +1,196 @@
+h1, h3, h4 {
+    font-family: "Lobster", fantasy, "google";
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+.section.white {
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/so-white.png") repeat;
+    color: #484848;
+}
+
+h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0 0 12px;
+    /*color: #5c0400;*/
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    margin-top: 1rem;
+}
+
+h4 {
+    margin: 10px auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.card.horizontal .card-stacked .card-content {
+    flex-grow: 1;
+    border-right: 1px solid rgba(160, 160, 160, 0.2);
+    border-left: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+/*.card .card-image {*/
+/*    position: relative;*/
+/*    box-shadow: 0.16rem 0.1rem 4px 1px #00000047;*/
+/*}*/
+.title-news {
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+    opacity: 0.5;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.title-news-data {
+    width: 120px;
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+}
+
+.container.bg {
+    max-width: 1180px;
+}
+
+.front-layout {
+    padding: 0;
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/show-galaktika-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-w {
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/Logo.svg") center no-repeat;
+    background-size: contain;
+    padding: 92px;
+    margin-left: 5rem;
+}
+
+.header-wrap {
+    margin: 1rem auto 2.5rem;
+}
+
+.social {
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/social.png");
+}
+
+p {
+    line-height: 2rem;
+}
+
+.parallax-container {
+    max-height: 370px !important;
+    line-height: 0;
+    color: rgba(255, 255, 255, .9);
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/show-galaktika-header.jpg") center no-repeat;
+    background-size: contain;
+    /*border-bottom:#a10d2166  20px solid ;*/
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+.vens {
+    padding: 15px 50px;
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/vens.png") no-repeat center;
+    background-size: contain;
+    margin-bottom: 10px;
+    opacity: .7;
+}
+
+.size-img {
+    width: 380px;
+    height: 380px;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.card {
+    box-shadow: none;
+    /*background: none;*/
+}
+
+nav ul {
+    margin: auto;
+
+}
+
+.teal4 > a {
+    margin-right: 4px;
+}
+
+.ico {
+    padding: 18px;
+    margin: auto 20px;
+    background: url("https://d3a1wbnh2r1l7y.cloudfront.net/show_galaktika/IVo.png") center no-repeat;
+    background-size: cover;
+    opacity: .7;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    section {
+        padding-left: 30rem;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+
+    .parallax-container {
+        height: 170px;
+        background-size: cover;
+    }
+
+    html {
+        font-size: 11px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .container {
+        min-width: 100vw;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    nav ul {
+        margin: 0;
+    }
+}
