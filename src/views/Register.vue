@@ -103,7 +103,7 @@
                 }
                 try {
                     await this.$store.dispatch('register', formData)
-                    this.$router.push('/')
+                    this.$router.push('/home')
                 } catch (e) {
                 }
             }

@@ -33,6 +33,7 @@
 <script>
     import paginationMixin from '@/mixins/pagination.mixin'
     import HistoryTable from "../components/HistoryTable";
+    import localizeFilter from "../filters/localize.filter";
     import {Pie} from 'vue-chartjs'
 
     export default {

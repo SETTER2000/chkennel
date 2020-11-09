@@ -1,7 +1,7 @@
 <template>
     <form class="card auth-card" @submit.prevent="submitHandler">
         <div class="card-content">
-            <span class="card-title">{{'Name_Suite' | localize}}</span>
+            <router-link to="/"><span class="card-title">{{'Name_Suite' | localize}}</span></router-link>
             <div class="input-field">
                 <input
                         id="email"
@@ -52,7 +52,7 @@
 <script>
     import {email, required, minLength} from 'vuelidate/lib/validators'
     import messages from "@/utils/messages";
-
+    import localizeFilter from "../filters/localize.filter";
     export default {
         name: "login",
         metaInfo() {
@@ -70,7 +70,7 @@
             password: {required, minLength: minLength(6)}
         },
         mounted() {
-            this.isRuLocale = this.info.locale === 'ru-RU'
+           // this.isRuLocale = this.info.locale === 'ru-RU'
             if (messages[this.$route.query.message]) {
                 this.$message(messages[this.$route.query.message])
             }
@@ -87,7 +87,7 @@
                 }
                 try {
                     await this.$store.dispatch('login', formData)
-                    this.$router.push('/');
+                    this.$router.push('/home');
                 } catch (e) { }
 
             }

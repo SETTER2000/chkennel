@@ -7,6 +7,12 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
+        name: 'root',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Root.vue')
+    },
+    {
+        path: '/home',
         name: 'home',
         meta: {layout: 'main', auth: true},
         component: () => import('../views/Home.vue')
@@ -24,10 +30,86 @@ const routes = [
         component: () => import('@/views/Register.vue')
     },
     {
-        path: '/news',
-        name: 'news',
+        path: '/новости',
+        name: 'новости',
         meta: {layout: 'clear'},
         component: () => import('@/views/News.vue')
+    },
+    {
+        path: '/контакты',
+        name: 'контакты',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Contacts.vue')
+    },
+    {
+        path: '/суки',
+        name: 'суки',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Dams.vue')
+    },
+    {
+        path: '/ухаживаем-дома',
+        name: 'ухаживаем-дома',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Grooming.vue')
+    },
+    {
+        path: '/кобели',
+        name: 'кобели',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Males.vue')
+    },
+    {
+        path: '/media',
+        name: 'media',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Media.vue')
+    },
+    {
+        path: '/щенки',
+        name: 'щенки',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Puppies.vue')
+    },
+    {
+        path: '/питание',
+        name: 'питание',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Food.vue')
+    },
+    {
+        path: '/готовим-сами',
+        name: 'готовим-сами',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/CookingOurselves.vue')
+    },
+    {
+        path: '/услуги',
+        name: 'услуги',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Services.vue')
+    }, {
+        path: '/архив',
+        name: 'архив',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Array.vue')
+    },
+    {
+        path: '/здоровье',
+        name: 'здоровье',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Health.vue')
+    },
+    {
+        path: '/чипы',
+        name: 'чипы',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/Chips.vue')
+    }, {
+        path: '/будущим-владельцам',
+        name: 'будущим-владельцам',
+        meta: {layout: 'clear'},
+        component: () => import('@/views/FutureOwners.vue')
     },
     {
         path: '/categories',
